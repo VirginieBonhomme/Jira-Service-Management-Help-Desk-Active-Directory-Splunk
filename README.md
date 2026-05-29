@@ -368,17 +368,7 @@ Every action I took in Active Directory generated a Windows Security Event that 
 | 4722 | Account enabled | Ticket 10 |
 | Sysmon EID 10 | Process accessed lsass | Ticket 10 |
 
-### Complete Lab 03 Audit Trail
 
-```splunk
-index=endpoint host=ADDC01
-(EventCode=4720 OR EventCode=4722 OR EventCode=4724
-OR EventCode=4725 OR EventCode=4728)
-| table _time, EventCode, Account_Name, ComputerName
-| sort -_time
-```
-
-*Screenshot: Complete Lab 03 audit trail in Splunk*
 
 ---
 
@@ -398,9 +388,6 @@ I plan to build DET-003 in Splunk as a dedicated Critical severity alert for lsa
 
 **PowerShell is the right tool for bulk IR actions.** When Ticket 10 required disabling every domain account I could have done it one by one through ADUC. Three PowerShell commands handled it in seconds with a color coded output showing exactly what happened to each account. In a real incident that speed difference matters.
 
-**The audit trail builds itself.** Every single action I took across all seven tickets appeared in Splunk automatically. I did not have to do anything extra. That means in a real environment there is no hiding what you did — good or bad. Working carefully and documenting thoroughly are not optional.
-
-**EventCode 4723 vs 4724.** I made a mistake during Ticket 03 searching for EventCode 4723 when I should have been searching for 4724. EventCode 4723 fires when a user changes their own password. EventCode 4724 fires when an admin resets it. Catching that mistake and correcting it taught me more than getting it right the first time would have.
 
 ---
 
