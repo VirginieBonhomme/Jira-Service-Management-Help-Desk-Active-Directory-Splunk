@@ -97,20 +97,9 @@ Before working tickets I created five new employees in Active Directory via ADUC
 
 Each user was created with must change password at next logon enabled.
 
-*Screenshot: All five new users in their correct OUs in ADUC*
-
 ---
 
 ## The Tickets I Worked
-
-For every ticket I followed this four step workflow:
-
-Step 1 — Create ticket in Jira — screenshot open
-Step 2 — Perform AD action on ADDC01 — screenshot change
-Step 3 — Add internal note with resolution — screenshot closed
-Step 4 — Verify in Splunk — screenshot EventCode
-
----
 
 ### Ticket 01 — New Hire Onboarding — Marcus Thompson
 
@@ -131,28 +120,11 @@ index=endpoint host=ADDC01 EventCode=4720
 | sort -_time
 ```
 
-*Screenshot: Ticket 01 open in Jira*
-*Screenshot: m.thompson in Finance OU — Member Of Finance-ReadOnly*
-*Screenshot: Ticket 01 resolved with internal notes and Splunk evidence embedded*
+<img width="1916" height="861" alt="Screenshot 2026-05-26 132810" src="https://github.com/user-attachments/assets/7dcbd65c-6e43-4024-b39b-22b11ca9b3c2" />
+<img width="1280" height="720" alt="VirtualBox_ADDC01_26_05_2026_12_52_44" src="https://github.com/user-attachments/assets/556083a0-676f-44fb-bb33-5e80fa696d2a" />
+<img width="1909" height="865" alt="Screenshot 2026-05-26 134921" src="https://github.com/user-attachments/assets/eaa7e6e4-53a1-45b4-b1d9-8d7815c3792f" />
 
----
 
-### Ticket 02 — New Hire Onboarding — Daniel Nguyen
-
-Daniel Nguyen joined the IT department and needed his AD account confirmed and IT-Admins group access assigned.
-
-**What I did in Jira:**
-Created a Service Request ticket with Medium priority and resolved it after confirming the AD account and group membership.
-
-**What I did in ADUC:**
-Confirmed d.nguyen existed in the IT OU and was a member of IT-Admins.
-
-**What Splunk showed:**
-EventCode 4720 confirmed the account creation was logged automatically.
-
-*Screenshot: Ticket 02 open in Jira*
-*Screenshot: d.nguyen in IT OU — Member Of IT-Admins*
-*Screenshot: Ticket 02 resolved with internal notes*
 
 ---
 
