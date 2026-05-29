@@ -81,14 +81,6 @@ The IT Service Management template gave me built in queues, SLA timers, and requ
 | Hardware Issue | Service Request |
 | Security Incident | Incident |
 
-I added all my Active Directory users as customers in Jira so their names appeared in the Contact field on every ticket.
-
-*Screenshot: RedBlue IT Help Desk project dashboard*
-
-*Screenshot: Request types configured*
-
-*Screenshot: Customers added*
-
 ---
 
 ### New Users Added to Active Directory
