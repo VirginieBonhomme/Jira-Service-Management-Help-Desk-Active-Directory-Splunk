@@ -337,23 +337,20 @@ Where-Object {
 
 swilliams remained disabled — already compromised in the brute force incident.
 
-**What Splunk confirmed:**
-```splunk
-index=endpoint host=ADDC01
-(EventCode=4725 OR EventCode=4724 OR EventCode=4722)
-| table _time, EventCode, Account_Name, ComputerName
-| sort -_time
-```
 
-Every action was automatically logged.
+<img width="1913" height="917" alt="Screenshot 2026-05-27 130933" src="https://github.com/user-attachments/assets/45170431-e1e7-4707-b113-181ad14a37b0" />
+<img width="1920" height="782" alt="cdump" src="https://github.com/user-attachments/assets/9c725372-565f-4166-93f6-1a313b6512c0" />
+<img width="1280" height="720" alt="VirtualBox_ADDC01_27_05_2026_14_43_45" src="https://github.com/user-attachments/assets/2782b782-fdf2-436e-82d8-2cdcb3ebd6c8" />
+<img width="1280" height="720" alt="VirtualBox_ADDC01_27_05_2026_14_47_22" src="https://github.com/user-attachments/assets/2e1bed36-e9b1-4b15-b34f-738b780ecefb" />
+<img width="1280" height="720" alt="VirtualBox_ADDC01_27_05_2026_14_49_48" src="https://github.com/user-attachments/assets/b5be4ee7-f961-42ec-8b76-502b69701646" />
+<img width="1919" height="971" alt="Screenshot 2026-05-27 142749" src="https://github.com/user-attachments/assets/8d5e9604-6a6d-45f3-bc05-3bd38020eaa1" />
+<img width="1914" height="924" alt="Screenshot 2026-05-27 145736" src="https://github.com/user-attachments/assets/3b10391d-fc95-4f1c-afa7-19a49dce76f9" />
+<img width="1918" height="967" alt="Screenshot 2026-05-27 145826" src="https://github.com/user-attachments/assets/e2c4d600-8a26-4aeb-ab25-bd5238c69592" />
 
-*Screenshot: Ticket 10 open — Critical priority*
-*Screenshot: Splunk T1003 raw Sysmon event*
-*Screenshot: PowerShell red DISABLED output*
-*Screenshot: PowerShell yellow PASSWORD RESET output*
-*Screenshot: PowerShell green RE-ENABLED output*
-*Screenshot: Splunk showing all IR actions logged*
-*Screenshot: Ticket 10 resolved with IR-001 referenced*
+
+
+
+
 
 ---
 
