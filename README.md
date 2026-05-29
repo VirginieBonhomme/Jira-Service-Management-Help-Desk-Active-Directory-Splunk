@@ -150,10 +150,15 @@ index=endpoint host=ADDC01 EventCode=4724
 | sort -_time
 ```
 
-*Screenshot: Ticket 03 open in Jira*
-*Screenshot: Reset Password dialog — must change at next logon checked*
-*Screenshot: Ticket 03 resolved with internal notes*
-*Screenshot: Splunk EventCode 4724 confirming admin reset*
+
+<img width="1916" height="865" alt="Screenshot 2026-05-26 141705" src="https://github.com/user-attachments/assets/dc2d4c83-b4e2-4589-bc80-076110c7ef0d" />
+<img width="1280" height="720" alt="VirtualBox_ADDC01_26_05_2026_14_20_11" src="https://github.com/user-attachments/assets/e2a7c4c2-7573-490f-92ee-110a5fa7e066" />
+<img width="1909" height="972" alt="Screenshot 2026-05-26 152822" src="https://github.com/user-attachments/assets/f111d716-e0b0-43d3-b4e9-ffe64d3fb398" />
+<img width="1280" height="720" alt="VirtualBox_ADDC01_26_05_2026_15_22_20" src="https://github.com/user-attachments/assets/c0b1f6d4-d8ba-4eed-9be0-f455da5319a9" />
+
+
+
+
 
 ---
 
@@ -176,10 +181,12 @@ index=endpoint host=ADDC01 EventCode=4725
 | sort -_time
 ```
 
-*Screenshot: Ticket 06 open in Jira*
-*Screenshot: t.harris in Disabled OU with disabled account icon*
-*Screenshot: Ticket 06 resolved with retention period documented*
-*Screenshot: Splunk EventCode 4725*
+<img width="1919" height="922" alt="Screenshot 2026-05-26 191344" src="https://github.com/user-attachments/assets/aaf52367-4dc0-4356-93d7-ad73d60c6ba6" />
+<img width="1280" height="720" alt="VirtualBox_ADDC01_26_05_2026_19_02_22" src="https://github.com/user-attachments/assets/0544af8b-8750-475f-ac2e-21fec52c9107" />
+<img width="1903" height="864" alt="Screenshot 2026-05-26 191937" src="https://github.com/user-attachments/assets/e926bb23-412b-4d6d-b0d4-a4fca297950b" />
+<img width="1280" height="720" alt="VirtualBox_ADDC01_26_05_2026_19_06_42" src="https://github.com/user-attachments/assets/cdf4ffd9-4519-49b0-8b03-d07960c1f77b" />
+
+
 
 ---
 
@@ -202,11 +209,16 @@ index=endpoint host=ADDC01 EventCode=4728
 | sort -_time
 ```
 
-*Screenshot: Ticket 07 open — waiting for approval*
-*Screenshot: Approval documented in internal note before AD action*
-*Screenshot: j.wilson Member Of tab showing Finance-ReadOnly added*
-*Screenshot: Ticket 07 resolved*
-*Screenshot: Splunk EventCode 4728*
+
+
+<img width="995" height="708" alt="Screenshot 2026-05-26 192709" src="https://github.com/user-attachments/assets/2c48c1b0-7aa2-455e-aa9a-913b6cd8e8fd" />
+<img width="1910" height="864" alt="Screenshot 2026-05-26 193013" src="https://github.com/user-attachments/assets/630f92d1-f66e-4840-afba-cdd37f499ae0" />
+<img width="1915" height="864" alt="Screenshot 2026-05-26 194042" src="https://github.com/user-attachments/assets/2427787a-2fc8-41c1-b6a0-e5bc3b1fbe08" />
+<img width="1280" height="720" alt="VirtualBox_ADDC01_26_05_2026_19_35_23" src="https://github.com/user-attachments/assets/a6263d73-bf73-42e0-a56b-c850fea79e9c" />
+
+
+
+
 
 ---
 
@@ -243,12 +255,14 @@ Confirmed s.williams was already disabled from prior IR-001 actions.
 **What I built after:**
 DET-002 Brute Force Failed Logons alert was built after finding this attack manually so it would be caught automatically in future.
 
-*Screenshot: Ticket 09 open — Critical priority*
-*Screenshot: Splunk 47 EventCode 4625 events*
-*Screenshot: Raw event showing Source_Network_Address and kali*
-*Screenshot: swilliams disabled in ADUC*
-*Screenshot: DET-002 alert configuration*
-*Screenshot: Ticket 09 resolved*
+
+<img width="1911" height="861" alt="Screenshot 2026-05-26 211150" src="https://github.com/user-attachments/assets/935362e2-dc73-4894-ac29-c20ea85f505f" />
+<img width="1917" height="848" alt="593775834-4a3bd3a0-f4ed-4b6f-9d7f-6d892a5444bf" src="https://github.com/user-attachments/assets/0b087c3d-3a65-495e-a4a6-90059a445e3e" />
+<img width="1280" height="720" alt="VirtualBox_ADDC01_26_05_2026_20_43_43" src="https://github.com/user-attachments/assets/ed07bedb-7ed1-4a8d-91c7-f1b7a48192d2" />
+<img width="1280" height="720" alt="VirtualBox_ADDC01_26_05_2026_21_30_18" src="https://github.com/user-attachments/assets/4b9ce030-04d4-4d28-ab65-92c12d556fee" />
+<img width="1918" height="971" alt="Screenshot 2026-05-26 213603" src="https://github.com/user-attachments/assets/c753fa8a-5e40-41ce-8c8b-8ef7c510918d" />
+<img width="1913" height="926" alt="Screenshot 2026-05-26 213636" src="https://github.com/user-attachments/assets/e12030ee-7f76-4332-92c2-db0a03660f4e" />
+
 
 ---
 
