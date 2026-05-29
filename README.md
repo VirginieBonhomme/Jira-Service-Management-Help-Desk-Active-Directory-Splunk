@@ -128,7 +128,7 @@ index=endpoint host=ADDC01 EventCode=4720
 
 ---
 
-### Ticket 03 — Password Reset — Priya Patel
+### Ticket 02 — Password Reset — Priya Patel
 
 Priya Patel could not log into her domain account and needed a password reset.
 
@@ -162,7 +162,7 @@ index=endpoint host=ADDC01 EventCode=4724
 
 ---
 
-### Ticket 06 — Offboarding — Tom Harris
+### Ticket 03 — Offboarding — Tom Harris
 
 Tom Harris left the company and his account needed to be formally offboarded. His account had already been disabled and moved to the Disabled OU during Lab 02. This ticket documents that action formally.
 
@@ -190,7 +190,7 @@ index=endpoint host=ADDC01 EventCode=4725
 
 ---
 
-### Ticket 07 — Access Request — James Wilson
+### Ticket 04 — Access Request — James Wilson
 
 James Wilson in Management requested read access to Finance resources for quarterly reporting. This ticket required documented approval before any AD action was taken.
 
@@ -222,7 +222,7 @@ index=endpoint host=ADDC01 EventCode=4728
 
 ---
 
-### Ticket 09 — Brute Force Attack — Steven Williams
+### Ticket 05 — Brute Force Attack — Steven Williams
 
 While reviewing Splunk logs I discovered a brute force attack against the s.williams account on Target-PC. This was not reported by a user — I found it myself during a manual Splunk investigation.
 
@@ -266,7 +266,7 @@ DET-002 Brute Force Failed Logons alert was built after finding this attack manu
 
 ---
 
-### Ticket 10 — T1003 Credential Dumping — All Domain Accounts
+### Ticket 06 — T1003 Credential Dumping — All Domain Accounts
 
 While searching Splunk I found a Sysmon event showing that a process had accessed lsass.exe on ADDC01 with full memory permissions. This was the most serious event in the entire lab.
 
@@ -360,13 +360,12 @@ Every action I took in Active Directory generated a Windows Security Event that 
 
 | EventCode | What It Means | Which Ticket |
 |---|---|---|
-| 4720 | Account created | Tickets 01 and 02 |
-| 4724 | Admin password reset | Ticket 03 |
-| 4725 | Account disabled | Ticket 06 |
-| 4728 | Added to security group | Ticket 07 |
-| 4625 | Failed logon attempt | Ticket 09 |
-| 4722 | Account enabled | Ticket 10 |
-| Sysmon EID 10 | Process accessed lsass | Ticket 10 |
+| 4720 | Account created | Tickets 01 |
+| 4724 | Admin password reset | Ticket 02 |
+| 4725 | Account disabled | Ticket 03 |
+| 4728 | Added to security group | Ticket 04 |
+| 4625 | Failed logon attempt | Ticket 05 |
+| Sysmon EID 10 | Process accessed lsass | Ticket 06 |
 
 
 
